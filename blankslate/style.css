@@ -1,0 +1,223 @@
+/*
+Theme Name: BlankSlate
+Theme URI: https://github.com/tidythemes/blankslate
+Author: TidyThemes
+Author URI: http://tidythemes.com/
+Description: Please read: tidythemes.com/concept. BlankSlate is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability and no intrusive visual CSS styles have been added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/tidythemes/blankslate/issues. Thank you.
+Version: 2019.1
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: one-column, two-columns, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: blankslate
+
+BlankSlate WordPress Theme © 2011-2019 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Questrial&display=swap');
+body{
+    font-family: 'Questrial', sans-serif;
+    
+}
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #F7F8FB;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 300px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 94px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    left: 40px;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #868896;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #11142D;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+    color: #11142D;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 22px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 300px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 85px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+
+
+#term, .clear-all {
+    font-size: 22px;
+    list-style: none;
+    text-transform: capitalize;
+    padding-right: 16px;
+    color: #D1D2DC;
+}
+
+#term_all{
+    display: none;
+}
+
+.date_month {
+    color: #F7F8FB;
+    font-size: 72px;
+    font-weight: 600;
+}
+.navbar-brand {
+      font-size: 36px;
+    
+    text-transform: capitalize;
+}
+
+.selected {
+    color: #000 !important;
+}
+
+.text-search {
+    height: 40px;
+    border: 1px solid #D1D2DC;
+    padding: 10px;
+}
+
+ #submit-search{
+     height: 40px;
+    border: 1px solid #D1D2DC;
+ }
+
+ #genre-results {
+    padding: 17px;
+}
+
+.card{
+    border: none;
+}
+
+.h2, h2 {
+    font-size: 1.5rem;
+}
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.genre-filter-navigation {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 24px;
+}
+
+
+.card-action {
+    padding: 20px;
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+}
+
+.card-footer {
+    padding: 0px;
+ 
+    border-top: none;
+    margin-bottom: 10px;
+}
+
+.current_category {
+    color: black;
+    text-transform: capitalize;
+}
